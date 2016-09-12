@@ -6,11 +6,16 @@ namespace AnagramsDemo
     {
         private static void Main(string[] args)
         {
+<<<<<<< HEAD
             Console.WriteLine("Please enter a word you would like to find anagrams for:");
             var word = Console.ReadLine();
 
             Anagram anagram = new Anagram();
             List<String> anagrams = anagram.FindAnagrams(word);
+=======
+            var anagram = new Anagram();
+            var anagrams = anagram.FindAnagrams("pots");
+>>>>>>> 12565aa9b275af0e9e83b3817112d725229d4516
 
             foreach (var entry in anagrams)
             {
