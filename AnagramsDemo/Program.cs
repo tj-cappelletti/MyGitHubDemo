@@ -10,10 +10,13 @@ namespace AnagramsDemo
     {
         static void Main(string[] args)
         {
-            Anagram anagram = new Anagram();
-            List<String> anagrams = anagram.FindAnagrams("pots");
+            Console.WriteLine("Please enter a word you would like to find anagrams for:");
+            var word = Console.ReadLine();
 
-            foreach(var entry in anagrams)
+            Anagram anagram = new Anagram();
+            List<String> anagrams = anagram.FindAnagrams(word);
+
+            foreach (var entry in anagrams)
             {
                 Console.WriteLine(entry);
             }
